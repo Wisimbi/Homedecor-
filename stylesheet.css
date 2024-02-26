@@ -122,7 +122,6 @@ footer {
     width:1330px;
     length:200px;
     height: outo;
-
 }
 
     .image1{
@@ -133,7 +132,6 @@ footer {
     }
 
     .container {
-        position: relative;
         width: 300px; 
       }
       .image {
@@ -144,9 +142,9 @@ footer {
     
       .text {
         position: absolute;
-        top: 30%;
-        left: 90%;
-        color: white;
+        top: 20%;
+        left: 50%;
+        color: rgb(31, 15, 15);
         font-size: 24px;
         font-weight: bold;
         text-align: center;
@@ -195,5 +193,26 @@ footer {
       .dropdown:hover .dropdown-content {
         display: block;
       }
-   
-
+      .carousel {
+        width: 50%;
+        margin-left: 10px;
+        overflow: hidden;
+        display:flex;
+        flex-direction: column;
+      }
+      
+      .carousel-inner {
+        width: 300%;
+        animation: slide 2s infinite;
+      
+      }
+      
+      .carousel-inner img {
+        width: calc(100% / 3); 
+        float: left;   
+      }
+      
+      @keyframes slide {
+        0% { right: 0; }
+        100% { left: -200%; }
+      }
